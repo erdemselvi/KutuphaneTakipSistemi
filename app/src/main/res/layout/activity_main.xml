@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tvCikis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:text="Çıkış Yap" />
+
+<!--    &lt;!&ndash;We are using this image view to display our QR code&ndash;&gt;-->
+<!--    <ImageView-->
+<!--        android:id="@+id/idIVQrcode"-->
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="300dp"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="50dp"-->
+<!--        android:contentDescription="qr_code" />-->
+
+<!--    &lt;!&ndash;Edit text to enter text for creating a QR code&ndash;&gt;-->
+<!--    <EditText-->
+<!--        android:id="@+id/idEdt"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/idIVQrcode"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:layout_marginEnd="20dp"-->
+<!--        android:autofillHints=""-->
+<!--        android:hint="Bilgi Girişi"-->
+<!--        android:inputType="text"-->
+<!--        android:minHeight="48dp" />-->
+
+    <!--Button for creating a QR code-->
+    <Button
+        android:id="@+id/btDashboard"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"
+        android:text="DashBoard" />
+    <Button
+        android:id="@+id/idBtnGenerateQR"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"
+        android:text="BENİM İÇİN QR CODE OLUŞTUR" />
+
+    <Button
+        android:id="@+id/btBarcode"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"
+        android:text="Kitap Ekle" />
+
+    <Button
+        android:id="@+id/btKitapTeslimEt"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"
+        android:text="Kitap Teslim Et / Al" />
+    <Button
+        android:id="@+id/btKitapVer"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"
+        android:text="Kitap Ver" />
+    <Button
+        android:id="@+id/btKitapAl"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"
+        android:text="Kitap Al" />
+    <Button
+        android:id="@+id/btOgrKaydet"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"
+        android:text="Öğrenci Kaydet" />
+    <Button
+        android:id="@+id/btKitapListele"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"
+        android:text="Kitapları Listele" />
+    <Button
+        android:id="@+id/btOgrenciListele"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"
+        android:text="Öğrencileri Listele" />
+    <Button
+        android:id="@+id/btEnCokListele"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"
+        android:text="En Çok Kitap Okuyanlar" />
+    <Button
+        android:id="@+id/btEnCokSayfa"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"
+        android:text="Okunan Sayfa Sayıları" />
+    <Button
+        android:id="@+id/btEnCokKitap"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"
+        android:text="En Çok Okunan Kitaplar" />
+</LinearLayout>
+</ScrollView>

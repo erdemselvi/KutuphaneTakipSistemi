@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context=".KitapVerActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <Button
+        android:id="@+id/btQrCodeTara"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="QR Kod ile Öğrenci Ara"/>
+    <Button
+        android:id="@+id/btOgrenciBul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Öğrenci Bul"/>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvOgrenci"
+        android:layout_margin="5dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginHorizontal="@dimen/cardview_compat_inset_shadow"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+
+        android:outlineSpotShadowColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:background="@color/orange">
+            <TextView
+                android:id="@+id/tvOgrId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="20sp"
+                android:text="boş"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/tvOgrAdi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="20sp"
+                android:text="Ad"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/tvOgrSoyad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="20sp"
+                android:text="Soyad"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvOgrAdi"  />
+
+            <TextView
+                android:id="@+id/tvOkulNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Okul Numarası"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvOgrSoyad" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/tvOkulNo">
+
+           <ImageView
+               android:id="@+id/ivTel"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="5dp"
+               android:src="@drawable/ic_baseline_phone_24"/>
+            <TextView
+                android:id="@+id/tvTelNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Telefon No"
+                android:textSize="20sp"
+                 />
+
+</LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+    <Button
+        android:id="@+id/btBarkodTara"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kitap Barkodu Tara"/>
+    <Button
+        android:id="@+id/btKitapBul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kitap Bul"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvKitap"
+        android:layout_margin="5dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginHorizontal="@dimen/cardview_compat_inset_shadow"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+
+        android:outlineSpotShadowColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:background="@color/teal_200">
+            <TextView
+                android:id="@+id/tvIsbn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="14sp"
+                android:text="ISBN"
+                app:layout_constraintEnd_toStartOf="@+id/ivResim"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvYazar" />
+
+            <TextView
+                android:id="@+id/tvOzet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:text="Özet"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvIsbn" />
+
+            <TextView
+                android:id="@+id/tvYazar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Yazar"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toStartOf="@+id/ivResim"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvKitapAdi" />
+
+            <TextView
+                android:id="@+id/tvKitapAdi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Kitap Adı"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/ivResim"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/ivResim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@tools:sample/avatars" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+        <SeekBar
+            android:id="@+id/sbSure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="120"
+            android:progress="30"/>
+        <TextView
+            android:id="@+id/tvSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Teslim Süresi: 30 Gün"
+            android:textSize="20sp"
+            android:gravity="center"/>
+    <Button
+        android:id="@+id/btKitapVer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/teal_700"
+        android:text="Kitabı Ver"/>
+    </LinearLayout>
+</ScrollView>
